@@ -150,7 +150,15 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        id 1
 }
+
+# TODO
+# bar {
+#         status_command while true; do uptime; sleep 1; done
+#         workspace_buttons no
+#         id 2
+# }
 
 # no thanks!
 focus_follows_mouse no
