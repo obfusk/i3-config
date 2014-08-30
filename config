@@ -146,8 +146,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# --
+
 bindsym $mod+y kill
 bindsym $mod+Control+l exec i3lock
+bindsym $mod+Control+Return exec terminator -x byobu bash
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -169,3 +172,8 @@ focus_follows_mouse no
 # Make pinentry windows floating
 for_window [class="pinentry"] floating enable
 for_window [class="Pinentry"] floating enable
+
+# run! run! run!
+exec --no-startup-id feh --bg-scale ~/.i3-bg
+exec terminator -x byobu bash
+exec terminator -x byobu bash
