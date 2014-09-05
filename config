@@ -176,4 +176,3 @@ for_window [class="Pinentry"] floating enable
 # run! run! run!
 exec --no-startup-id feh --bg-scale ~/.i3-bg
 exec terminator -x byobu bash
-exec terminator -x byobu bash
