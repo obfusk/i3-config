@@ -177,3 +177,6 @@ for_window [class="Pinentry"] floating enable
 # run! run! run!
 exec --no-startup-id feh --bg-scale ~/.i3-bg
 exec terminator -x byobu bash
+
+# please don't crash when my external monitor disappears :-(
+delay_exit_on_zero_displays 8000 ms
