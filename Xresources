@@ -4,7 +4,7 @@ URxvt.scrollBar:  False
 URxvt.font:       xft:Monospace:size=11,xft:IPAGothic:size=11
 URxvt.boldFont:   xft:Monospace:size=11:bold,xft:IPAGothic:size=11:bold
 
-#if HOST == lithium
+#ifdef CLNT_lithium
 URxvt.letterSpace: -1
 #endif
 
