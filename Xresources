@@ -4,6 +4,10 @@ URxvt.scrollBar:  False
 URxvt.font:       xft:Monospace:size=11,xft:IPAGothic:size=11
 URxvt.boldFont:   xft:Monospace:size=11:bold,xft:IPAGothic:size=11:bold
 
+#if HOST == lithium
+URxvt.letterSpace: -1
+#endif
+
 URxvt.keysym.C-1: command:\033]710;xft:Monospace:size=10,xft:IPAGothic:size=10\007\033]711;xft:Monospace:size=10,xft:IPAGothic:size=10:bold\007
 URxvt.keysym.C-2: command:\033]710;xft:Monospace:size=11,xft:IPAGothic:size=11\007\033]711;xft:Monospace:size=11,xft:IPAGothic:size=11:bold\007
 URxvt.keysym.C-3: command:\033]710;xft:Monospace:size=12,xft:IPAGothic:size=12\007\033]711;xft:Monospace:size=12,xft:IPAGothic:size=12:bold\007
