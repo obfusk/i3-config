@@ -1,0 +1,3 @@
+#!/bin/bash
+feh --bg-center ~/.feh-bg
+light -S 50

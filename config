@@ -118,6 +118,9 @@ bindsym $mod+grave exec \
 bindsym $mod+Shift+grave exec \
   i3-input -F 'move container to workspace %s' -P 'move to workspace: '
 
+bindsym $mod+p workspace prev
+bindsym $mod+n workspace next
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -181,8 +184,22 @@ for_window [class="pinentry"] floating enable
 for_window [class="Pinentry"] floating enable
 
 # run! run! run!
-exec --no-startup-id feh --bg-scale ~/.i3-bg
 exec urxvt -e byobu bash
 
 # please don't crash when my external monitor disappears :-(
 # delay_exit_on_zero_displays 8000 ms
+
+bindsym --release $mod+Prior exec --no-startup-id \
+  xdotool keyup Super && xdotool key Home
+bindsym --release $mod+Next exec --no-startup-id \
+  xdotool keyup Super && xdotool key End
+
+bindsym --release $mod+Shift+Prior exec --no-startup-id \
+  xdotool keyup Super && xdotool key Home
+bindsym --release $mod+Shift+Next exec --no-startup-id \
+  xdotool keyup Super && xdotool key End
+
+bindsym --release $mod+Control+Prior exec --no-startup-id \
+  xdotool keyup Super && xdotool key Home
+bindsym --release $mod+Control+Next exec --no-startup-id \
+  xdotool keyup Super && xdotool key End
