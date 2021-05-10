@@ -179,9 +179,10 @@ bar {
 # no thanks!
 focus_follows_mouse no
 
-# Make pinentry windows floating
+# Make pinentry & kanjidraw windows floating
 for_window [class="pinentry"] floating enable
 for_window [class="Pinentry"] floating enable
+for_window [title="Kanji Draw"] floating enable
 
 # run! run! run!
 exec urxvt -e byobu bash
