@@ -204,3 +204,6 @@ bindsym --release $mod+Control+Prior exec --no-startup-id \
   xdotool keyup Super && xdotool key Home
 bindsym --release $mod+Control+Next exec --no-startup-id \
   xdotool keyup Super && xdotool key End
+
+bindsym $mod+Control+k exec --no-startup-id kanjidraw-paste -o
+bindsym $mod+Control+m exec --no-startup-id kanjidraw-paste -m
