@@ -27,7 +27,7 @@ font pango:Monospace 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -159,7 +159,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+y kill
 bindsym $mod+Control+l        exec i3lock
 bindsym $mod+Control+Shift+l  exec lock-and-suspend
-bindsym $mod+Control+Return   exec urxvt -e byobu bash
+bindsym $mod+Control+Return   exec st -e byobu bash
 bindsym $mod+Control+Shift+5  exec killall chromium
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -185,7 +185,7 @@ for_window [class="Pinentry"] floating enable
 for_window [title="Kanji Draw"] floating enable
 
 # run! run! run!
-exec urxvt -e byobu bash
+exec st -e byobu bash
 
 # please don't crash when my external monitor disappears :-(
 # delay_exit_on_zero_displays 8000 ms
